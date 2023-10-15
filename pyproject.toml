@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "thestral"
+version = "0.1.0"
+description = "a simple asgi server"
+authors = ["rahulsalgare <rsalgare95@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.103.2"
+sanic = "^23.6.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+thestral = "thestral.main:main"
